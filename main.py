@@ -1,6 +1,6 @@
 # imports
 from time import gmtime, strftime
-from cliff.logging import *
+from cliff import *
 
 # variables
 username = 'user'
