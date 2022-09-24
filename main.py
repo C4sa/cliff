@@ -16,6 +16,9 @@ while True:
 
     elif cmd == '' or cmd.startswith(' '):
         continue
+    
+    elif cmd == 'aaa':
+        print('@@@ test AAAA')
 
     else:
         err('The command \"' + cmd + '\" you are trying to access is unknown.')
