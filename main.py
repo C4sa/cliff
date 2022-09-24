@@ -12,13 +12,13 @@ while True:
     cmd = input(cyan('┌──(') + blue(username + '@' + hostname) + cyan('- [') + magenta(prefix_time) + cyan(']') + cyan('\n└─') + blue('$ '))
 
     if cmd == 'help':
-        print('Useful help text')
+        help()
 
     elif cmd == '' or cmd.startswith(' '):
         continue
     
-    elif cmd == 'aaa':
-        print('@@@ test AAAA')
+    elif cmd == 'cls' or cmd == 'clear':
+        clear()
 
     else:
         err('The command \"' + cmd + '\" you are trying to access is unknown.')
